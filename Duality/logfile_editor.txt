@@ -195,3 +195,137 @@
 [Core] Msg:   Compiling Vertex shader 'Default\VertexShader\Minimal'...
 [Core] Msg:   Compiling Fragment shader 'Default\FragmentShader\Minimal'...
 [Core] Msg: Compiling DrawTechnique 'Default\DrawTechnique\Mask'...
+[Core] Msg: Compiling DrawTechnique 'Default\DrawTechnique\Solid'...
+[Core] Msg: Loading Resource 'Data\Sprites\balls.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\hearts.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\SpaceBg.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\breakout_pieces.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\bricks.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\paddles.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\SpaceBg.Pixmap.res'
+[Core] Msg: Compiling DrawTechnique 'Default\DrawTechnique\Picking'...
+[Core] Msg:   Compiling Fragment shader 'Default\FragmentShader\Picking'...
+[Core] Msg: Loading Resource 'Data\Sprites\hearts.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\bricks.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\breakout_pieces.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\paddles.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Sprites\balls.Pixmap.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Assembly loaded: Windows7.DesktopIntegration 1.0.0.0
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving user data...
+[Core] Msg: Shutting down GLControl (OpenTK)...
+[Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
+[Core] Msg: Shutting down OpenAL (OpenTK)...
+[Core] Msg: Shutting down .Net Framework...
+[Core] Msg: DualityApp terminated

@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <UserData>
   <EditorApp>
     <Backups>true</Backups>
     <Autosaves>ThirtyMinutes</Autosaves>
-    <FirstSession>true</FirstSession>
+    <FirstSession>false</FirstSession>
+    <ActiveDocumentIndex>1</ActiveDocumentIndex>
+    <LastOpenScene>Data\Scene.Scene.res</LastOpenScene>
+    <StartWithLastScene>true</StartWithLastScene>
   </EditorApp>
   <Plugins>
     <Plugin id="CamView">
       <CamView id="0">
-        <Perspective>Parallax</Perspective>
+        <Perspective>Perspective</Perspective>
         <FocusDist>500</FocusDist>
+        <RenderSetup>Default:RenderSetup:Default</RenderSetup>
         <BackgroundColor>
           <R>64</R>
           <G>64</G>
@@ -23,6 +27,10 @@
         </SnapToGridSize>
         <ActiveState>Duality.Editor.Plugins.CamView.CamViewStates.SceneEditorCamViewState</ActiveState>
         <States>
+          <State type="Duality.Editor.Plugins.CamView.CamViewStates.GameViewCamViewState">
+            <SpecialRenderSize>CamView</SpecialRenderSize>
+            <RecentRenderSizes />
+          </State>
           <State type="Duality.Editor.Plugins.CamView.CamViewStates.RigidBodyEditorCamViewState">
             <ActiveLayers>
               <Item>Duality.Editor.Plugins.CamView.CamViewLayers.RigidBodyJointCamViewLayer</Item>
@@ -41,6 +49,76 @@
           </State>
         </States>
       </CamView>
+      <CamView id="1">
+        <Perspective>Perspective</Perspective>
+        <FocusDist>500</FocusDist>
+        <BackgroundColor>
+          <R>64</R>
+          <G>64</G>
+          <B>64</B>
+          <A>0</A>
+        </BackgroundColor>
+        <SnapToGridSize>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+        </SnapToGridSize>
+        <ActiveState>Duality.Editor.Plugins.CamView.CamViewStates.GameViewCamViewState</ActiveState>
+        <States>
+          <State type="Duality.Editor.Plugins.CamView.CamViewStates.GameViewCamViewState">
+            <SpecialRenderSize>GameTarget</SpecialRenderSize>
+            <RecentRenderSizes />
+          </State>
+          <State type="Duality.Editor.Plugins.CamView.CamViewStates.RigidBodyEditorCamViewState">
+            <ActiveLayers>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.BackPlateCamViewLayer</Item>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.RigidBodyJointCamViewLayer</Item>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.RigidBodyShapeCamViewLayer</Item>
+            </ActiveLayers>
+            <ObjectVisibility>
+              <Item>Duality.Components.Physics.RigidBody</Item>
+            </ObjectVisibility>
+          </State>
+        </States>
+      </CamView>
+      <CamView id="2">
+        <Perspective>Perspective</Perspective>
+        <FocusDist>500</FocusDist>
+        <BackgroundColor>
+          <R>64</R>
+          <G>64</G>
+          <B>64</B>
+          <A>0</A>
+        </BackgroundColor>
+        <SnapToGridSize>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+        </SnapToGridSize>
+        <ActiveState>Duality.Editor.Plugins.CamView.CamViewStates.RigidBodyEditorCamViewState</ActiveState>
+        <States>
+          <State type="Duality.Editor.Plugins.CamView.CamViewStates.GameViewCamViewState">
+            <SpecialRenderSize>CamView</SpecialRenderSize>
+            <RecentRenderSizes />
+          </State>
+          <State type="Duality.Editor.Plugins.CamView.CamViewStates.RigidBodyEditorCamViewState">
+            <ActiveLayers>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.BackPlateCamViewLayer</Item>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.RigidBodyJointCamViewLayer</Item>
+              <Item>Duality.Editor.Plugins.CamView.CamViewLayers.RigidBodyShapeCamViewLayer</Item>
+            </ActiveLayers>
+            <ObjectVisibility>
+              <Item>Duality.Components.Physics.RigidBody</Item>
+            </ObjectVisibility>
+          </State>
+        </States>
+      </CamView>
+    </Plugin>
+    <Plugin id="EditorBase">
+      <PixmapSlicer>
+        <DarkBackground>false</DarkBackground>
+        <DisplayIndices>Hovered</DisplayIndices>
+      </PixmapSlicer>
     </Plugin>
     <Plugin id="LogView">
       <LogView>
@@ -60,6 +138,19 @@
         <Locked>false</Locked>
         <TitleText>Object Inspector</TitleText>
         <DebugMode>false</DebugMode>
+        <SortByName>true</SortByName>
+        <ExpandState>
+          <ExpandedNodes>
+            <NodeID>PropertiesDuality.GameObject/CameraDuality.Components.Camera/</NodeID>
+            <NodeID>PropertiesDuality.Resources.Pixmap/PixmapDuality.Resources.Pixmap/</NodeID>
+            <NodeID>PropertiesDuality.Resources.Pixmap/PixmapDuality.Resources.Pixmap/PixmapDuality.Resources.Pixmap/</NodeID>
+            <NodeID>PropertiesDuality.Resources.Pixmap/Import / Export SettingsDuality.Resources.Pixmap/</NodeID>
+            <NodeID>PropertiesDuality.GameObject/TransformDuality.Components.Transform/</NodeID>
+            <NodeID>PropertiesDuality.GameObject/RigidBodyDuality.Components.Physics.RigidBody/</NodeID>
+            <NodeID>PropertiesDuality.Resources.Scene/SceneDuality.Resources.Scene/</NodeID>
+            <NodeID>PropertiesDuality.GameObject/PaddleDuality_.Paddle/</NodeID>
+          </ExpandedNodes>
+        </ExpandState>
       </ObjectInspector>
     </Plugin>
     <Plugin id="SceneView">
@@ -73,16 +164,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--DockPanel configuration file. Author: Weifen Luo, all rights reserved.-->
 <!--!!! AUTOMATICALLY GENERATED FILE. DO NOT MODIFY !!!-->
-<DockPanel FormatVersion="1.0" DockLeftPortion="0.25" DockRightPortion="0.440885416666667" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="7" ActivePane="7">
-  <Contents Count="6">
+<DockPanel FormatVersion="1.0" DockLeftPortion="0.25" DockRightPortion="0.440885416666667" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="8" ActivePane="8">
+  <Contents Count="9">
     <Content ID="0" PersistString="Duality.Editor.Plugins.CamView.CamView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
-    <Content ID="1" PersistString="Duality.Editor.Plugins.ProjectView.ProjectFolderView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
-    <Content ID="2" PersistString="Duality.Editor.Plugins.SceneView.SceneView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
-    <Content ID="3" PersistString="Duality.Editor.Plugins.ObjectInspector.ObjectInspector" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
-    <Content ID="4" PersistString="Duality.Editor.Plugins.HelpAdvisor.HelpAdvisor" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+    <Content ID="1" PersistString="Duality.Editor.Plugins.ProjectView.ProjectFolderView" AutoHidePortion="0.440885416666667" IsHidden="False" IsFloat="False" />
+    <Content ID="2" PersistString="Duality.Editor.Plugins.SceneView.SceneView" AutoHidePortion="0.440885416666667" IsHidden="False" IsFloat="False" />
+    <Content ID="3" PersistString="Duality.Editor.Plugins.ObjectInspector.ObjectInspector" AutoHidePortion="0.440885416666667" IsHidden="False" IsFloat="False" />
+    <Content ID="4" PersistString="Duality.Editor.Plugins.HelpAdvisor.HelpAdvisor" AutoHidePortion="0.440885416666667" IsHidden="False" IsFloat="False" />
     <Content ID="5" PersistString="Duality.Editor.Plugins.LogView.LogView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+    <Content ID="6" PersistString="Duality.Editor.Plugins.CamView.CamView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+    <Content ID="7" PersistString="Duality.Editor.Plugins.CamView.CamView" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+    <Content ID="8" PersistString="Duality.Editor.Plugins.Base.Forms.PixmapSlicerForm" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
   </Contents>
-  <Panes Count="8">
+  <Panes Count="9">
     <Pane ID="0" DockState="DockRight" ActiveContent="2">
       <Contents Count="1">
         <Content ID="0" RefID="2" />
@@ -120,15 +214,23 @@
       </Contents>
     </Pane>
     <Pane ID="7" DockState="Document" ActiveContent="0">
-      <Contents Count="1">
+      <Contents Count="2">
         <Content ID="0" RefID="0" />
+        <Content ID="1" RefID="8" />
+      </Contents>
+    </Pane>
+    <Pane ID="8" DockState="Document" ActiveContent="6">
+      <Contents Count="2">
+        <Content ID="0" RefID="6" />
+        <Content ID="1" RefID="7" />
       </Contents>
     </Pane>
   </Panes>
   <DockWindows>
     <DockWindow ID="0" DockState="Document" ZOrderIndex="0">
-      <NestedPanes Count="1">
+      <NestedPanes Count="2">
         <Pane ID="0" RefID="7" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+        <Pane ID="1" RefID="8" PrevPane="7" Alignment="Bottom" Proportion="0.5" />
       </NestedPanes>
     </DockWindow>
     <DockWindow ID="1" DockState="DockLeft" ZOrderIndex="3">
