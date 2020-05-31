@@ -21,14 +21,32 @@ namespace Duality_
         [DontSerialize]
         bool movingLeft = false;
 
+        const float MovementLimit = 343f;
+
         void ICmpUpdatable.OnUpdate()
         {
             Move();
         }
 
+        bool CanGoRight()
+        {
+            if (GameObj.Transform.Pos.X > MovementLimit - 1)
+                return false;
+            else
+                return true;
+        }
+
+        bool CanGoLeft()
+        {
+            if (GameObj.Transform.Pos.X < -MovementLimit + 1)
+                return false;
+            else
+                return true;
+        }
+
         void Move()
         {
-            if (DualityApp.Keyboard.KeyPressed(Key.Right))
+            if (DualityApp.Keyboard.KeyPressed(Key.Right) && CanGoRight())
             {
                 //move paddle right
                 GameObj.Transform.MoveBy(Vector2.UnitX * PaddleSpeed * Time.DeltaTime);
@@ -37,7 +55,7 @@ namespace Duality_
             else
                 movingRight = false;
 
-            if (DualityApp.Keyboard.KeyPressed(Key.Left))
+            if (DualityApp.Keyboard.KeyPressed(Key.Left) && CanGoLeft())
             {
                 //move paddle left
                 GameObj.Transform.MoveBy(-Vector2.UnitX * PaddleSpeed * Time.DeltaTime);
@@ -54,15 +72,18 @@ namespace Duality_
             //apply a force to the ball when paddle collides with it.
             if (collisionEvent.OtherShape.UserTag == 1)
             {
-                collisionEvent.OtherShape.Parent.LinearVelocity = Vector2.Zero;
-
                 Vector2 appliedForce = -Vector2.UnitY;
+
+                
+
                 if (movingRight)
-                    appliedForce = (-Vector2.UnitY + Vector2.UnitX) * 0.6f;
+                    appliedForce = (-Vector2.UnitY + Vector2.UnitX) * 0.9f;
 
                 if (movingLeft)
-                    appliedForce = (-Vector2.UnitY - Vector2.UnitX) * 0.6f;
-                collisionEvent.OtherShape.Parent.ApplyWorldForce(-Vector2.UnitY * Force);
+                    appliedForce = (-Vector2.UnitY - Vector2.UnitX) * 0.9f;
+                //collisionEvent.OtherShape.Parent.ApplyWorldForce(-Vector2.UnitY * Force);
+
+                collisionEvent.OtherShape.Parent.LinearVelocity = appliedForce * Force;
             }
         }
 
